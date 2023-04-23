@@ -37,7 +37,7 @@ nav ul li a{
 	text-transform: uppercase;
 }
 a.active,a:hover{
-	background: lightpink;
+	background: #775311;
 	transition: .5s;
 }
 .checkbtn{
