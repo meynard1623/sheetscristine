@@ -17,13 +17,12 @@
     <label for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
     </label>
-   
-   &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; <img src="images/SheetsCristine.png" alt="My Image" style="width:60px;height:60px">
+    <img src="images/SheetsCristine.png" alt="My Image" style="width:60px;height:60px">
+</a>
    
     <ul>
 
       <li><a class="active" href="#">Home</a></li>
-      
       <li><a href="product.html">Product</a></li>
       <li><a href="about.html">About</a></li>
       
