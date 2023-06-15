@@ -76,7 +76,7 @@ if ($mail->send()) {
 	echo '<script>alert("Email sending failed.");</script>';
   }
   
-	header("Location:index.html");
+	header("Location:about.html");
 	exit();
 //Closing smtp connection
 	$mail->smtpClose();
