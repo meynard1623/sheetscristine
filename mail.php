@@ -58,7 +58,9 @@ $mail->setFrom('jminfantado123@gmail.com','Admin');
 //Attachment
 	 $mail->addAttachment('images/SheetsCristine.png');
 //Email body
-	$mail->Body ="<h1>Dear $name, </h1> 
+	$mail->Body ="Dear Customer $name, Experience the ultimate comfort and luxury of our premium quality bed sheets. Crafted with care from the finest materials, our 
+	sheets offer a soft, smooth feel and long-lasting durability 
+	that will elevate your sleeping experience. Indulge in a restful night's sleep every night with our high-quality bed sheets. 
 
 ";
 //Add recipient
