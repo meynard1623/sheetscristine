@@ -17,7 +17,7 @@ $message=$_POST['message'];
 //Set mailer to use smtp
 	$mail->isSMTP();
 //Define smtp host
-	$mail->Host = "smtp.hostinger.com";
+	$mail->Host = "smtp.gmail.com";
 //Enable smtp authentication
 	$mail->SMTPAuth = true;
 //Set smtp encryption type (ssl/tls)
@@ -25,13 +25,13 @@ $message=$_POST['message'];
 //Port to connect smtp
 	$mail->Port = "587";
 //Set gmail username
-	$mail->Username = "Jminfantado123@gmail.com";
+	$mail->Username = "jminfantado123@gmail.com";
 //Set gmail password
-	$mail->Password = "nkdgsslikemqazjs";
+	$mail->Password = "smewvzjkovvskdfh";
 //Email subject
 	$mail->Subject = "Customer: $subject";
 //Set sender email
-	$mail->setFrom('Jminfantado123@gmail.com','Admin');
+	$mail->setFrom('jminfantado123@gmail.com','Admin');
 //Enable HTML
 	$mail->isHTML(true);
 //Attachment
@@ -39,7 +39,7 @@ $message=$_POST['message'];
 //Email body
 	$mail->Body = $message;
 //Add recipient
-	$mail->addAddress('Jminfantado123@gmail.com');
+	$mail->addAddress('jminfantado123@gmail.com');
 //Finally send email
 if ($mail->send()) {
 	//Email has been sent
@@ -52,14 +52,14 @@ if ($mail->send()) {
 $mail->clearAllRecipients();
   
 //Set sender email
-$mail->setFrom('Jminfantado123@gmail.com','Admin');
+$mail->setFrom('jminfantado123@gmail.com','Admin');
 //Enable HTML
 	$mail->isHTML(true);
 //Attachment
 	 $mail->addAttachment('images/SheetsCristine.png');
 //Email body
-	$mail->Body ="<h1>Dear $name,</h1>
-   
+	$mail->Body ="<h1>Dear $name, </h1> 
+
 ";
 //Add recipient
 	$mail->addAddress($email);
