@@ -25,13 +25,13 @@ $message=$_POST['message'];
 //Port to connect smtp
 	$mail->Port = "587";
 //Set gmail username
-	$mail->Username = "customersupport@bigboyautowash.tech";
+	$mail->Username = "Jminfantado123@gmail.com";
 //Set gmail password
-	$mail->Password = "Abc@1234";
+	$mail->Password = "nkdgsslikemqazjs";
 //Email subject
-	$mail->Subject = "Customer Concern: $subject";
+	$mail->Subject = "Customer: $subject";
 //Set sender email
-	$mail->setFrom('customersupport@bigboyautowash.tech','Support Team');
+	$mail->setFrom('Jminfantado123@gmail.com','Admin');
 //Enable HTML
 	$mail->isHTML(true);
 //Attachment
@@ -39,7 +39,7 @@ $message=$_POST['message'];
 //Email body
 	$mail->Body = $message;
 //Add recipient
-	$mail->addAddress('customersupport@bigboyautowash.tech');
+	$mail->addAddress('Jminfantado123@gmail.com');
 //Finally send email
 if ($mail->send()) {
 	//Email has been sent
@@ -52,18 +52,14 @@ if ($mail->send()) {
 $mail->clearAllRecipients();
   
 //Set sender email
-$mail->setFrom('customersupport@bigboyautowash.tech','Support Team');
+$mail->setFrom('Jminfantado123@gmail.com','Admin');
 //Enable HTML
 	$mail->isHTML(true);
 //Attachment
-	 $mail->addAttachment('img/logo.jpg');
+	 $mail->addAttachment('images/SheetsCristine.png');
 //Email body
 	$mail->Body ="<h1>Dear $name,</h1>
-    <p>Thank you for choosing BigBoy Autowash for your recent car washing and detailing service. We hope that you were satisfied with the level of service provided by our team. We take pride in delivering high-quality services and are committed to ensuring that our customers have a positive experience with us.</p>
-    <p>We would appreciate it if you could take a few moments to provide us with your feedback on your recent visit. Your feedback will help us to identify areas where we can improve and make necessary changes to our services. Your input is valuable to us, and we take your feedback seriously.</p>
-    <p>Please feel free to share your feedback by replying to this email, or by visiting our website and leaving a review. We would be happy to hear from you.</p>
-    <p>Thank you for your time and support. We look forward to serving you again soon.</p>
-    <p>Best regards,<br>BigBoy Garage Autowash Team</p>
+   
 ";
 //Add recipient
 	$mail->addAddress($email);
@@ -76,7 +72,7 @@ if ($mail->send()) {
 	echo '<script>alert("Email sending failed.");</script>';
   }
   
-	header("Location:about.html");
+	header("Location:index.php");
 	exit();
 //Closing smtp connection
 	$mail->smtpClose();
